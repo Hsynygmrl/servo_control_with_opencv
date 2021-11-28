@@ -10,8 +10,8 @@ import time
 cap = cv2.VideoCapture(0)
 pTime = 0
 detector = htm.handDetector(detectionCon=0.7,maxHands= 1) # en fazla 1 el bul
-
-board=pyfirmata.Arduino('COM6')
+ 
+board=pyfirmata.Arduino('COM6') #you write your board's information of com
 
 iter8 = pyfirmata.util.Iterator(board)
 iter8.start()
